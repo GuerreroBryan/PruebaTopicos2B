@@ -1,0 +1,11 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <h1>Calcular la Edad ⏳</h1>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<input type="date" [(ngModel)]="age" />
+<button type="button" (click)="ageCalculator()"> Calcular </button>
+<p *ngIf="age">Tu edad es {{ showAge }}</p>
